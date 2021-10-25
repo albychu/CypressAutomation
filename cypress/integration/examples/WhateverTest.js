@@ -1,7 +1,7 @@
-describe('my Tests', function()
-{ 
-    it('second Test', function()
-    {
+/// <reference types=”Cypress”/>
+
+describe('my Tests', function () {
+    it('second Test', function () {
         cy.visit('https://www.goldbelly.com')
         cy.get('.index-module__button___3okgK').click()
         cy.get('.index-module__container___V8zaE > :nth-child(2)').click()
