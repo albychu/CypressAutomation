@@ -21,5 +21,4 @@ it('My secondTest case', function () {
         if ($e1.text() === "India") {
             $e1.click()
         }
-
     })
