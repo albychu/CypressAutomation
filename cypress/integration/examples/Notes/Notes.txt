@@ -1,0 +1,42 @@
+### Best Practices
+1. Stub Requests (piece of code used as substitute for another code or yet-to-be developed code)
+Good
+    -Fast, Easy, Flexible
+        Control the Network: cy.server(), cy.route(), set status codes, set response bodies, test edge cases
+    -No Server/Database
+Bad
+    -Not a true End-to-End (E2E) testing
+    -Requires Fixtures
+2. Static User
+Good
+    -Real Session End-to-End (logging in as a real user)
+Bad
+    -Requires a Server
+    -Seed the Database (populate with data)
+    -Shares Test State
+3. Dynamic User 
+    -New User for each Test - before each one
+        -Modify DB within Tests
+        -Query DB within Tests
+Good
+    -No State Mutations
+    -Flexibe / Powerful
+Bad
+    -DB Setup / Teardown
+    -Slow/Complex
+
+###
+ Don't use the UI to build up State
+ Set state directly / programmitcally 
+ 
+ Don't use page objects to share UI knowledge
+ Write specs in isolation, avoid coupling
+ 
+ Don't limit yourself trying to act like user
+ You have native access to everything in application
+
+ No Constraints 
+ Control Time: cy.clock()
+ Stub Objects: cy.stub()
+ Modify Stores: cy.window()
+ 

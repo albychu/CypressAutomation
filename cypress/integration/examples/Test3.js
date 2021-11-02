@@ -19,7 +19,6 @@ it('My secondTest case', function () {
     //Dynamic Dropdown
     cy.get('#autocomplete').type('ind')
     cy.get('.ui-menu-item div').each(($el, index, $list) => {
-
         if ($el.text() === "India") {
             $el.click()
         }
