@@ -40,3 +40,15 @@ Bad
  Stub Objects: cy.stub()
  Modify Stores: cy.window()
  
+cypress has control and can manipulate browser dom (html code) 
+    auto accepts alerts and popups - clicks on them
+tagname#idname - navigating to url -visit
+.classname   .search-keyword 
+tagname[attribute=value]    input[type='search']  cypress supports CSS Selector only
+form input     can see what happens in each step with screenshot and error messages
+click() , type() , text()  = cy.get('.search-keyword').type('ca')
+iterating over array of web element using each() = .each(($el, index, $list)
+non-cypress commands cannot resovle promises by themselves so resolve it by using .then()
+alias to reuse locators
+cypress has capability of browser events. window:alert is the event which gets fired on the alert open
+    firing the event through cypress to get access to the alert
