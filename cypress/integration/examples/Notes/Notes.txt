@@ -1,3 +1,14 @@
+###Solid Tests 
+1. Set up the application state
+2. Take an actioin
+3. make assertion about resulting application state
+Sometimes known as Given, When, Then or Arrange, Act, Assert
+^BUT you want to first put the application into specific state, 
+^THEN take action in application that causes it to change
+^ FINALLY check the resulting application state
+
+
+
 ### Best Practices
 1. Stub Requests (piece of code used as substitute for another code or yet-to-be developed code)
 Good
